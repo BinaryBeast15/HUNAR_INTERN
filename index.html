@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>Abhishek Verma</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="bio" class="bio">
+            <h2>About Me</h2>
+            <p>
+                Hello, my name is Abhishek Verma. I have a strong interest in web development and enjoy creating dynamic and user-friendly websites. In my free time, I love playing badminton, which helps me stay active and sharp..</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>You can find me on these platforms:</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abhishekvermaa" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/BinaryBeast15" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- <footer>
+        <p>&copy; 2024 AV. All Rights Reserved.</p>
+    </footer> -->
+    <script>
+        function highlightSection(sectionId) {
+            document.querySelectorAll('.bio, .contact').forEach(section => {
+                section.classList.remove('highlight');
+            });
+            document.getElementById(sectionId).classList.add('highlight');
+        }
+    </script>
+</body>
+</html>
